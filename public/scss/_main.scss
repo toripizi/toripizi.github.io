@@ -1,0 +1,175 @@
+#main-top{
+    height: 70%;
+    width: 100%;
+    &-left{
+        transition: background-image 0.5s ease-in-out;
+        width: 55%;
+        background-image: url(../../images/desktop-image-hero-1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        >header{
+            width:60%;
+            height:120px;
+            color:white;
+        }
+        &-logo{
+            width:40%;
+            >a >img{
+                width: 80px;
+            }
+        }
+        &-options{
+            width: 60%;
+            margin-top: 7px;
+            .option{
+                list-style-type: none;
+                cursor: pointer;
+                #line{
+                    height:2px;
+                    width:60%;
+                    background-color: white;
+                    margin:auto;
+                    opacity: 0;
+                    margin-top:5px;
+                }
+            }
+            .option:hover #line{
+                opacity: 1;
+            }
+        }
+    }
+    &-right{
+        position: relative;
+        width: 45%;
+        background-color: white;
+        padding: 5% 6%;
+        >li{
+            list-style-type: none;
+            >p{
+                font-size: 13px;
+                line-height: 1.7;
+                color: $DarkGray;
+            }
+        }
+        >div{
+            >h4{
+                text-transform: uppercase;
+                letter-spacing: 7px;
+                font-weight: 600;
+            }
+            >svg{
+                margin-left:20px;
+                margin-bottom:2px;
+            }
+        }
+        >div:hover{
+            cursor: pointer;
+            color: $DarkGray;
+            >svg{
+                >path{
+                    fill:$DarkGray;
+                }
+            }
+        }
+    }
+}
+
+#main-bottom{
+    height: 30%;
+    width: 100%;
+    &-first{
+        width: 28%;
+        height: 100%;
+        >img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-secend{
+        width: 44%;
+        height: 100%;
+        background-color:white;
+        padding: 1% 3%;
+        >p{
+            font-size: 13px;
+            line-height: 1.7;
+            color: $DarkGray;
+        }
+        >h3{
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 16px;
+            margin-top: 25px;
+        }
+    }
+    &-third{
+        width: 28%;
+        height: 100%;
+        >img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+#slider{
+    width: 17vw;
+    height: 7.5vw;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    &-left{
+        width: 50%;
+        height: 100%;
+        >img{
+            width: 1.5vw;
+        }
+    }
+    &-left:hover{
+        background-color: $VeryDarkGray;
+    }
+    &-right{
+        width: 50%;
+        height: 100%;
+        >img{
+            width: 1.5vw;
+        }
+    }
+    &-right:hover{
+        background-color: $VeryDarkGray;
+    }
+
+
+    //main-top-right 
+    //article
+    &-2{
+        display: none;
+    }
+    &-3{
+        display: none;
+    }
+}
+
+#mobile-menu{
+    z-index: 1;
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    color:black;
+    transform: translateY(-100%);
+    transition: all 0.5s ease-in-out;
+    >li{
+        cursor: pointer;
+        list-style-type: none;
+        font-weight: 700;
+        font-size: 12px;
+    }
+    >img{
+        cursor: pointer;
+    }
+}
+#main{
+    transition: opacity 0.5s ease-in-out;
+}
