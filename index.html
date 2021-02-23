@@ -2,138 +2,146 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <link rel="stylesheet" href="public/css/style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap" rel="stylesheet" />
-
-  <title>Frontend Mentor | Room homepage</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbara Fobke</title>
+    <link rel="stylesheet" href="./fontello-b3c382da/css/fontello.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600&display=swap" rel="stylesheet">
+    <!--
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    -->
 </head>
 
 <body>
-  <div id="mobile-menu" class="hide-for-desktop flex flex-ai-c flex-jc-sa">
-    <img src="images/icon-close.svg" alt="wyjdz z menu" id="close" />
-    <li class="option">home<div id="line"></div>
-    </li>
-    <li class="option">shop<div id="line"></div>
-    </li>
-    <li class="option">about<div id="line"></div>
-    </li>
-    <li class="option">contact<div id="line"></div>
-    </li>
-  </div>
-  <div id="main" style="width: 100vw; height: 100vh; flex-wrap: wrap" class="flex">
-    <div id="main-top" class="flex">
-      <div id="main-top-left">
-        <header class="flex flex-ai-c flex-jc-c">
-          <img id="hamburger" class="hide-for-desktop" src="images/icon-hamburger.svg" alt="menu">
-          <div id="main-top-left-logo" class="flex flex-ai-c flex-jc-c">
-            <a href="#" class="flex flex-ai-c flex-jc-c"><img src="images/logo.svg" alt="logo" /></a>
-          </div>
-          <div id="main-top-left-options" class="flex flex-ai-c flex-jc-sa hide-for-mobile">
-            <li class="option">home<div id="line"></div>
-            </li>
-            <li class="option">shop<div id="line"></div>
-            </li>
-            <li class="option">about<div id="line"></div>
-            </li>
-            <li class="option">contact<div id="line"></div>
-            </li>
-          </div>
-        </header>
-
-        <div id="slider" class="flex hide-for-desktop">
-          <div id="slider-left2" class="flex flex-ai-c flex-jc-c">
-            <img src="./images/icon-angle-left.svg" alt="previous" />
-          </div>
-          <div id="slider-right2" class="flex flex-ai-c flex-jc-c">
-            <img src="./images/icon-angle-right.svg" alt="next" />
-          </div>
+    <header class="flex">
+        <div style="background-color: white;" class="half flex flex-ai-c flex-jc-c">
+            <div id="logo">
+                <div>B<span id="logo-imie">ARBARA</span></div>
+                <div id="logo-nazwisko">FOBKE</div>
+            </div>
+            <div id="burgerMenu" class="icon-menu-1 hide-for-desktop"></div>
         </div>
-      </div>
-      <div id="main-top-right">
-        <li id="slider-1">
-          <h1>
-            Discover innovative ways to decorate
-          </h1>
-          <p>
-            We provide unmatched quality, comfort, and style for property owners across the country.
-            Our experts combine form and function in bringing your vision to life. Create a room in your
-            own style with our collection and make your property a reflection of you and what you love.
-          </p>
-        </li>
-        <li id="slider-2">
-          <h1>
-            We are available all across the globe
-          </h1>
-          <p>
-            With stores all over the world, it's easy for you to find furniture for your home or place of business.
-            Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
-            store locator. Any questions? Don't hesitate to contact us today.
-          </p>
-        </li>
-        <li id="slider-3">
-          <h1>
-            Manufactured with the best materials
-          </h1>
-          <p>
-            Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
-            to ensure that every product is made as perfect and as consistent as possible. With three decades of
-            experience in this industry, we understand what customers want for their home and office.
-          </p>
-        </li>
-        <div class="flex flex-ai-c ">
-          <h4>
-            Shop now
-          </h4>
-          <svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
-              fill="#000" fill-rule="nonzero" />
-          </svg>
-        </div>
+        <nav id="nav-tablet" style="background-color: #FA4F4F;" class="half flex flex-ai-c hide-for-mobile">
+            <div id="nav" class="flex flex-ai-c flex-jc-c">
+                <li>O mnie</li>
+                <li>Galeria</li>
+                <li>Kontakt</li>
+                <button>
+                    <span class="spanBorder"></span>
+                    Umów spotkanie
+                </button>
+            </div>
+        </nav>
+    </header>
 
-        <div id="slider" class="flex hide-for-mobile">
-          <div id="slider-left" class="flex flex-ai-c flex-jc-c">
-            <img src="./images/icon-angle-left.svg" alt="previous" />
-          </div>
-          <div id="slider-right" class="flex flex-ai-c flex-jc-c">
-            <img src="./images/icon-angle-right.svg" alt="next" />
-          </div>
-        </div>
-      </div>
-    </div>
+    <main>
+        <section id="backgroundPage" class="hide-for-desktop"></section>
+        <section id="first" class="flex">
+            <div id="first-main" class="half">
+                <div>
+                    <h1>Barbara Fobke</h1>
+                </div>
+                <div>
+                    <h1>& Aviva</h1>
+                </div>
+                <p>
+                    Agent Ubezpieczeniowy z wieloletnim doświadczeniem w firmie Aviva.
+                </p>
+                <button>
+                    <span class="spanBorder"></span>
+                    Więcej informacji
+                </button>
+            </div>
+            <div class="half hide-for-mobile"></div>
+        </section>
+        <section id="secend" class="flex">
+            <div id="secend-left" class="half">
+            </div>
+            <i class="icon-hash hash hide-for-mobile" id="secend-hash"></i>
+            <div id="secend-right" class="half">
+                <h1><span>Design</span> is strategic.</h1>
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout.
+                </p>
+                <button>
+                    <span class="spanBorder hide-for-mobile"></span>
+                    Schedule a call
+                </button>
+            </div>
+        </section>
+        <section id="third">
+            <h1 class="hide-for-mobile">
+                Listen to your heart. It knows all things.
+            </h1>
+            <article id="third-main" class="flex flex-jc-c flex-ai-c">
+                <div id="third-main-content" class="flex flex-jc-c">
+                    <h1 class="hide-for-desktop">
+                        Listen to your heart. It knows all things.
+                    </h1>
+                    <div class="theme">
+                        <span>01</span>
+                        <h3>Tutaj jakis tytuł</h3>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page.It is a long established fact that a reader will be distracted by the readable content
+                            of a page.
+                        </p>
+                    </div>
+                    <div class="theme">
+                        <span>02</span>
+                        <h3>Tutaj jakis tytuł</h3>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page.It is a long established fact that a reader will be distracted by the readable content
+                            of a page.
+                        </p>
+                    </div>
+                    <div class="theme">
+                        <span>03</span>
+                        <h3>Tutaj jakis tytuł</h3>
+                        <p>
+                            It is a long established fact that a reader will be distracted by the readable content of a
+                            page.It is a long established fact that a reader will be distracted by the readable content
+                            of a page.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="fourth" class="flex">
+            <div id="fourth-right" class="hide-for-desktop"></div>
+            <div id="fourth-left" class="flex flex-ai-c flex-jc-c">
+                <h1>
+                    <span>Sth</span> cool title & you know know me.
+                </h1>
+            </div>
+            <i class="icon-hash hash hide-for-mobile" id="fourth-hash"></i>
+            <div id="fourth-none" class="hide-for-mobile"></div>
+            <div id="fourth-right" class="hide-for-mobile"></div>
+        </section>
+        <section id="fifth" class="flex flex-ai-c flex-jc-sb">
+            <h1>
+                Do something crazy together.
+            </h1>
+            <button>
+                <span class="spanBorder"></span>
+                Schedule a call
+            </button>
+        </section>
+    </main>
+    <footer>
 
-    <div id="main-bottom" class="flex">
-      <div id="main-bottom-first">
-        <img src="./images/image-about-dark.jpg" alt="przykładowe zdjęcie produktu sklepu" />
-      </div>
-      <div id="main-bottom-secend">
-        <h3>About our furniture</h3>
-        <p>
-          Our multifunctional collection blends design and function to suit your individual taste.
-          Make each room unique, or pick a cohesive theme that best express your interests and what
-          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-          or anything in between. Product specialists are available to help you create your dream space.
-        </p>
-      </div>
-      <div id="main-bottom-third">
-        <img src="./images/image-about-light.jpg" alt="przykładowe zdjęcie produktu sklepu" />
-      </div>
-    </div>
-  </div>
-
-  <!--
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  -->
-  <script src="public/js/script.js"></script>
+    </footer>
+    <script src="js/srcipt.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,260 @@
+main{
+    width: 100%;
+    
+    #first {
+        width: 100%;
+        height: 85vh;
+        background: /* transparent blue overlay */
+        linear-gradient(to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0)
+        ), 
+        /* inset your image below */
+        url(../images/paper-5985445.jpg) top right;
+        background-size: cover;
+        &-main{
+            padding-left: 8%;
+            padding-right: 50px;
+            padding-top: 50px;
+            >div > h1{
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 700;
+                font-size: 65px;
+                line-height: 0.5;
+                white-space:nowrap;
+            }
+            >p{
+                color:$Black;
+                line-height: 180%;
+                letter-spacing: 1px;
+            }
+            >button{
+                letter-spacing: 1px;
+                padding: 20px 30px;
+                font-size: 13px;
+                font-weight: 600;
+                display: block;
+                margin: 0 5%;
+                background-color: $Red;
+                color: $Black;
+                border: none;
+                margin:50px;
+                position: relative;
+                transition: transform 0.2s ease-in-out;
+                margin:80px 0;
+                >span{
+                    border-color: $Black;
+                }
+            }
+            >button:focus{
+                outline: none;
+            }
+            >button:hover{
+                cursor: pointer;
+                transform: translate(5px, -5px);
+        
+                >span{
+                    transform: translate(-5px, 5px);
+                }
+            }
+        }
+    }
+    #secend{
+        width: 100%;
+        height: 120vh;
+        &-left{
+            background-image: url(../images/blake-carpenter-Ok2-7hSwYro-unsplash-768x1152.jpg);
+            background-size: cover;
+        }
+        &-hash{
+            color: $Red;
+            margin-left:45%;
+            margin-bottom: 28%;
+        }
+        &-right{
+            background-color: $Black;
+            padding-left: 10%;
+            padding-top: 11%;
+            padding-right: 100px;
+            >h1{
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 700;
+                font-size: 55px;
+                color: white;
+            }
+            >h1 > span{
+                font-family: 'Josefin Sans', sans-serif;
+                color: $Red;
+            }
+            >p{
+                color: whitesmoke;
+                line-height: 180%;
+                letter-spacing: 1px;
+            }
+            >button{
+                letter-spacing: 1px;
+                padding: 20px 30px;
+                font-size: 13px;
+                font-weight: 600;
+                display: block;
+                background-color: $Red;
+                color: rgba(255, 255, 255, 0.884);
+                border: none;
+                margin: 40px 0;
+                position: relative;
+                transition: transform 0.2s ease-in-out;
+                >span{
+                    border-color: rgba(255, 255, 255, 0.884);
+                }
+            }
+            >button:focus{
+                outline: none;
+            }
+            >button:hover{
+                cursor: pointer;
+                transform: translate(5px, -5px);
+        
+                >span{
+                    transform: translate(-5px, 5px);
+                }
+            }
+        }
+    }
+    #third{
+        width: 100%;
+        height: 120vh;
+        position: relative;
+        >h1{
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 700;
+            font-size: 60px;
+            position: absolute;
+            z-index: 6;
+            width: 40%;
+            margin-top: 13%;
+            margin-left: 4%;
+        }
+        &-main{
+            position: absolute;
+            z-index: 3;
+            height: 140vh;
+            width: 65%;
+            background-color: $Red;
+            right: 0;
+            bottom: 0;
+            &-content{
+                width: 70%;
+                height: 100vh;
+                margin-top: 5%;
+                flex-direction: column;
+                align-items: flex-end;
+                .theme{
+                    width: 80%;
+                    height: 33%;
+                    position: relative;
+                    >h3{
+                        color: white;
+                        margin-bottom: 30px;
+                        position: relative;
+                    }
+                    >p{
+                        color:$LightRed;
+                        line-height: 180%;
+                        font-weight: 500;
+                    }
+                    >span{
+                        position: absolute;
+                        font-size:70px;
+                        color: $LightRed;
+                        font-weight: 700;
+                        z-index: 0;
+                        left: -48px;
+                        top: -27px;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+    #fourth{
+        width: 100%;
+        height: 100vh;
+        &-left{
+            width: 50%;
+            height: 75%;
+            background-color: $Black;
+            position: absolute;
+            z-index: 2;
+            >h1{
+                font-family: 'Josefin Sans', sans-serif;
+                color: white;
+                font-size: 55px;
+                margin-left: 8%;
+                display: block;
+                width: 85%;
+            }
+            >h1 span{
+                font-family: 'Josefin Sans', sans-serif;
+                color:$Red;
+            }
+        }
+        &-none{
+            width: 35%;
+            height: 100%;
+        }
+        &-hash{
+            color: $Red;
+            margin-left:45%;
+            margin-bottom: 11%;
+        }
+        &-right{
+            background-image: url(../images/rizky-subagja-NdWTSTK0G8k-unsplash-768x1152.jpg);
+            width: 65%;
+            height: 100%;
+            background-size: cover;
+        }
+    }
+    #fifth{
+        width: 100%;
+        height: 50vh;
+        >h1{
+            font-family: 'Josefin Sans', sans-serif;
+            color: black;
+            font-size: 55px;
+            margin-left: 5%;
+            display: block;
+            width: 50%;
+            margin-left:5%;
+        }
+        >button{
+            letter-spacing: 1px;
+            padding: 20px 30px;
+            font-size: 13px;
+            font-weight: 600;
+            display: block;
+            margin: 0 5%;
+            background-color: $Red;
+            color: $Black;
+            border: none;
+            margin:50px;
+            margin-right:10%;
+            position: relative;
+            transition: transform 0.2s ease-in-out;
+            >span{
+                border-color: $Black;
+            }
+        }
+        >button:focus{
+            outline: none;
+        }
+        >button:hover{
+            cursor: pointer;
+            transform: translate(5px, -5px);
+    
+            >span{
+                transform: translate(-5px, 5px);
+            }
+        }
+    }
+}

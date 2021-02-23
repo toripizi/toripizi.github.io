@@ -1,0 +1,47 @@
+@media (max-width: "1229px"){
+    main #first-main{
+        padding-left: 4%;
+        >div >h1{
+            font-size: 60px;
+        }
+    }
+
+    #nav-tablet{
+        justify-content: center;
+        #nav{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: "999px"){
+    #nav{
+        >li{font-size: 11px; padding:10px;}
+        >button{font-size: 10px;}
+    }
+    #logo{
+        margin-right: 30%;
+    }
+    main #secend-hash {margin-left: 42%;}
+    main #third > h1 {
+        font-size: 40px;
+        width: 30%;
+        margin-top: 20%;
+        margin-left: 20px;
+    }
+
+    main #third-main{
+        justify-content: flex-start;
+        &-content{
+            width: 90%;
+        }
+    }
+
+    main #fourth-left > h1 {margin-left:0;font-size: 50px;}
+    main #fourth-hash {margin-left: 42%;}
+
+    
+}
+@media (max-width: "860px"){
+    main #secend-right >h1{font-size:49px;}
+}

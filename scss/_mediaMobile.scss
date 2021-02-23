@@ -1,0 +1,174 @@
+@media (max-width: "800px"){
+    //header
+    header{
+        margin: auto;
+        width: 95%;
+        height: 15vh;
+        >div{
+            justify-content: space-between!important;
+            #logo{
+                margin-right: 0;
+                font-size: 35px;
+                &-nazwisko{
+                    font-size: 18px;
+                    margin-top: -10px;
+                }
+            }
+            #burgerMenu{
+                font-size: 35px;
+            }
+            #burgerMenu:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .half{width: 100%}
+
+    //main
+    main{
+        #backgroundPage{
+            width: 100%;
+            height: 55vh;
+            background: url(../images/paper-5985445.jpg) top right;
+            background-size: cover;
+        }
+        #first {
+            height: 65vh;
+            background: none;
+            &-main{
+                padding-left: 20px;
+                padding-top: 60px;
+            }
+        }
+        #secend{
+            height: 100vh;
+            display: block;
+            &-left{
+                width: 100%;
+                height: 50%;
+            }
+            &-right{
+                width: 100%;
+                height: 50%;
+                padding:0 30px;
+                padding-top: 1%;
+                >h1{
+                    font-size: 35px;
+                }
+                >p{
+                    font-size: 16px;
+                }
+                >button{
+                    background-color: $Black;
+                    color: $Red;
+                    margin: 20px 0 0 0;
+                    padding:0 0 10px 0;
+                    border-bottom: solid 2px $Red;
+                }
+                >button:hover{
+                    color:$LightRed;
+                    transform:none;
+                    border-color: $LightRed;
+                }
+            }
+        }
+        #third{
+            width: 100%;
+            height: 160vh;
+            position: static;
+            &-main{
+                position: static;
+                height: 100%;
+                width: 100%;
+                &-content{
+                    width: 100%;
+                    height: 100%;
+                    margin:0;
+                    padding:0px 10px;
+                    >h1{
+                        font-family: 'Josefin Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 35px;
+                        color:white;
+                        margin: 100px 30px;
+                    }
+                    .theme{
+                        width: 90%;
+                        >span{
+                            left:-35px;
+                        }
+                    }
+                }
+            }
+        }
+        #fourth{
+            height: 120vh;
+            display: block;
+            &-left{
+                position: static;
+                width: 100%;
+                height: 50%;
+            }
+            &-right{
+                width: 100%;
+                height: 50%;
+            }
+        }
+        #fifth{
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            >h1{
+                width: 100%;
+                padding:0 30px;
+                margin:0;
+                font-size: 40px;
+            }
+            >button{
+                margin-left:30px;
+            }
+        }
+    }
+}
+@media (max-width:"600px"){
+    main #first-main > div > h1{font-size: 12vw;}
+}
+@media (max-height:"600px"){
+    main{
+        #first {
+            height: 90vh;
+        }
+        #secend{
+            height: 140vh;
+        }
+        #third{
+            height: 200vh;
+            &-main{
+                &-content{
+                    h1{
+                        font-size: 30px;
+                        margin:60px 30px;
+                    }
+                    .theme{
+                        >span{
+                            left:-35px;
+                        }
+                    }
+                }
+                    
+            }
+        }
+        #fourth{
+            &-left{
+                >h1{
+                    font-size: 40px;
+                }
+            }
+        }
+        #fifth{
+            >h1{
+                font-size: 30px;
+            }
+        }
+    }
+}

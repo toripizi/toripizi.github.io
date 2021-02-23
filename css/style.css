@@ -1,0 +1,714 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-sa {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hash {
+  position: absolute;
+  font-size: 100px;
+  z-index: 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.spanBorder {
+  width: 100%;
+  height: 100%;
+  border: solid 2px white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+@media (max-width: 799px) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
+header {
+  width: 100%;
+  height: 15vh;
+}
+
+.half {
+  width: 50%;
+  height: 100%;
+}
+
+#logo {
+  margin-right: 50%;
+  margin-bottom: 10px;
+  font-family: 'Shippori Mincho B1', serif;
+  font-size: 40px;
+}
+
+#logo-imie {
+  font-size: smaller;
+}
+
+#logo-nazwisko {
+  font-size: 20px;
+  margin-top: -12px;
+  text-align: right;
+}
+
+#nav {
+  width: 80%;
+  height: 34%;
+  letter-spacing: 1px;
+}
+
+#nav > li {
+  list-style-type: none;
+  padding: 15px;
+  font-size: 15px;
+  color: #faa0aa;
+  font-weight: 600;
+  position: relative;
+}
+
+#nav > li:hover {
+  cursor: pointer;
+  color: #690612;
+}
+
+#nav > button {
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin: 0 5%;
+  background-color: #191920;
+  color: rgba(255, 255, 255, 0.884);
+  border: none;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+#nav > button:focus {
+  outline: none;
+}
+
+#nav > button:hover {
+  cursor: pointer;
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+}
+
+#nav > button:hover > span {
+  -webkit-transform: translate(-5px, 5px);
+          transform: translate(-5px, 5px);
+}
+
+main {
+  width: 100%;
+}
+
+main #first {
+  width: 100%;
+  height: 85vh;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0))), url(../images/paper-5985445.jpg) top right;
+  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(../images/paper-5985445.jpg) top right;
+  background-size: cover;
+}
+
+main #first-main {
+  padding-left: 8%;
+  padding-right: 50px;
+  padding-top: 50px;
+}
+
+main #first-main > div > h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 0.5;
+  white-space: nowrap;
+}
+
+main #first-main > p {
+  color: #191920;
+  line-height: 180%;
+  letter-spacing: 1px;
+}
+
+main #first-main > button {
+  letter-spacing: 1px;
+  padding: 20px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin: 0 5%;
+  background-color: #FA4F4F;
+  color: #191920;
+  border: none;
+  margin: 50px;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  margin: 80px 0;
+}
+
+main #first-main > button > span {
+  border-color: #191920;
+}
+
+main #first-main > button:focus {
+  outline: none;
+}
+
+main #first-main > button:hover {
+  cursor: pointer;
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+}
+
+main #first-main > button:hover > span {
+  -webkit-transform: translate(-5px, 5px);
+          transform: translate(-5px, 5px);
+}
+
+main #secend {
+  width: 100%;
+  height: 120vh;
+}
+
+main #secend-left {
+  background-image: url(../images/blake-carpenter-Ok2-7hSwYro-unsplash-768x1152.jpg);
+  background-size: cover;
+}
+
+main #secend-hash {
+  color: #FA4F4F;
+  margin-left: 45%;
+  margin-bottom: 28%;
+}
+
+main #secend-right {
+  background-color: #191920;
+  padding-left: 10%;
+  padding-top: 11%;
+  padding-right: 100px;
+}
+
+main #secend-right > h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  color: white;
+}
+
+main #secend-right > h1 > span {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #FA4F4F;
+}
+
+main #secend-right > p {
+  color: whitesmoke;
+  line-height: 180%;
+  letter-spacing: 1px;
+}
+
+main #secend-right > button {
+  letter-spacing: 1px;
+  padding: 20px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  background-color: #FA4F4F;
+  color: rgba(255, 255, 255, 0.884);
+  border: none;
+  margin: 40px 0;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+main #secend-right > button > span {
+  border-color: rgba(255, 255, 255, 0.884);
+}
+
+main #secend-right > button:focus {
+  outline: none;
+}
+
+main #secend-right > button:hover {
+  cursor: pointer;
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+}
+
+main #secend-right > button:hover > span {
+  -webkit-transform: translate(-5px, 5px);
+          transform: translate(-5px, 5px);
+}
+
+main #third {
+  width: 100%;
+  height: 120vh;
+  position: relative;
+}
+
+main #third > h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  position: absolute;
+  z-index: 6;
+  width: 40%;
+  margin-top: 13%;
+  margin-left: 4%;
+}
+
+main #third-main {
+  position: absolute;
+  z-index: 3;
+  height: 140vh;
+  width: 65%;
+  background-color: #FA4F4F;
+  right: 0;
+  bottom: 0;
+}
+
+main #third-main-content {
+  width: 70%;
+  height: 100vh;
+  margin-top: 5%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main #third-main-content .theme {
+  width: 80%;
+  height: 33%;
+  position: relative;
+}
+
+main #third-main-content .theme > h3 {
+  color: white;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+main #third-main-content .theme > p {
+  color: #faa0aa;
+  line-height: 180%;
+  font-weight: 500;
+}
+
+main #third-main-content .theme > span {
+  position: absolute;
+  font-size: 70px;
+  color: #faa0aa;
+  font-weight: 700;
+  z-index: 0;
+  left: -48px;
+  top: -27px;
+  opacity: 0.5;
+}
+
+main #fourth {
+  width: 100%;
+  height: 100vh;
+}
+
+main #fourth-left {
+  width: 50%;
+  height: 75%;
+  background-color: #191920;
+  position: absolute;
+  z-index: 2;
+}
+
+main #fourth-left > h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  font-size: 55px;
+  margin-left: 8%;
+  display: block;
+  width: 85%;
+}
+
+main #fourth-left > h1 span {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #FA4F4F;
+}
+
+main #fourth-none {
+  width: 35%;
+  height: 100%;
+}
+
+main #fourth-hash {
+  color: #FA4F4F;
+  margin-left: 45%;
+  margin-bottom: 11%;
+}
+
+main #fourth-right {
+  background-image: url(../images/rizky-subagja-NdWTSTK0G8k-unsplash-768x1152.jpg);
+  width: 65%;
+  height: 100%;
+  background-size: cover;
+}
+
+main #fifth {
+  width: 100%;
+  height: 50vh;
+}
+
+main #fifth > h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  color: black;
+  font-size: 55px;
+  margin-left: 5%;
+  display: block;
+  width: 50%;
+  margin-left: 5%;
+}
+
+main #fifth > button {
+  letter-spacing: 1px;
+  padding: 20px 30px;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  margin: 0 5%;
+  background-color: #FA4F4F;
+  color: #191920;
+  border: none;
+  margin: 50px;
+  margin-right: 10%;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+main #fifth > button > span {
+  border-color: #191920;
+}
+
+main #fifth > button:focus {
+  outline: none;
+}
+
+main #fifth > button:hover {
+  cursor: pointer;
+  -webkit-transform: translate(5px, -5px);
+          transform: translate(5px, -5px);
+}
+
+main #fifth > button:hover > span {
+  -webkit-transform: translate(-5px, 5px);
+          transform: translate(-5px, 5px);
+}
+
+footer {
+  width: 100%;
+  height: 50vh;
+  background-color: #191920;
+}
+
+@media (max-width: 1229px) {
+  main #first-main {
+    padding-left: 4%;
+  }
+  main #first-main > div > h1 {
+    font-size: 60px;
+  }
+  #nav-tablet {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #nav-tablet #nav {
+    width: 100%;
+  }
+}
+
+@media (max-width: 999px) {
+  #nav > li {
+    font-size: 11px;
+    padding: 10px;
+  }
+  #nav > button {
+    font-size: 10px;
+  }
+  #logo {
+    margin-right: 30%;
+  }
+  main #secend-hash {
+    margin-left: 42%;
+  }
+  main #third > h1 {
+    font-size: 40px;
+    width: 30%;
+    margin-top: 20%;
+    margin-left: 20px;
+  }
+  main #third-main {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  main #third-main-content {
+    width: 90%;
+  }
+  main #fourth-left > h1 {
+    margin-left: 0;
+    font-size: 50px;
+  }
+  main #fourth-hash {
+    margin-left: 42%;
+  }
+}
+
+@media (max-width: 860px) {
+  main #secend-right > h1 {
+    font-size: 49px;
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    margin: auto;
+    width: 95%;
+    height: 15vh;
+  }
+  header > div {
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  header > div #logo {
+    margin-right: 0;
+    font-size: 35px;
+  }
+  header > div #logo-nazwisko {
+    font-size: 18px;
+    margin-top: -10px;
+  }
+  header > div #burgerMenu {
+    font-size: 35px;
+  }
+  header > div #burgerMenu:hover {
+    cursor: pointer;
+  }
+  .half {
+    width: 100%;
+  }
+  main #backgroundPage {
+    width: 100%;
+    height: 55vh;
+    background: url(../images/paper-5985445.jpg) top right;
+    background-size: cover;
+  }
+  main #first {
+    height: 65vh;
+    background: none;
+  }
+  main #first-main {
+    padding-left: 20px;
+    padding-top: 60px;
+  }
+  main #secend {
+    height: 100vh;
+    display: block;
+  }
+  main #secend-left {
+    width: 100%;
+    height: 50%;
+  }
+  main #secend-right {
+    width: 100%;
+    height: 50%;
+    padding: 0 30px;
+    padding-top: 1%;
+  }
+  main #secend-right > h1 {
+    font-size: 35px;
+  }
+  main #secend-right > p {
+    font-size: 16px;
+  }
+  main #secend-right > button {
+    background-color: #191920;
+    color: #FA4F4F;
+    margin: 20px 0 0 0;
+    padding: 0 0 10px 0;
+    border-bottom: solid 2px #FA4F4F;
+  }
+  main #secend-right > button:hover {
+    color: #faa0aa;
+    -webkit-transform: none;
+            transform: none;
+    border-color: #faa0aa;
+  }
+  main #third {
+    width: 100%;
+    height: 160vh;
+    position: static;
+  }
+  main #third-main {
+    position: static;
+    height: 100%;
+    width: 100%;
+  }
+  main #third-main-content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px 10px;
+  }
+  main #third-main-content > h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: white;
+    margin: 100px 30px;
+  }
+  main #third-main-content .theme {
+    width: 90%;
+  }
+  main #third-main-content .theme > span {
+    left: -35px;
+  }
+  main #fourth {
+    height: 120vh;
+    display: block;
+  }
+  main #fourth-left {
+    position: static;
+    width: 100%;
+    height: 50%;
+  }
+  main #fourth-right {
+    width: 100%;
+    height: 50%;
+  }
+  main #fifth {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main #fifth > h1 {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0;
+    font-size: 40px;
+  }
+  main #fifth > button {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  main #first-main > div > h1 {
+    font-size: 12vw;
+  }
+}
+
+@media (max-height: 600px) {
+  main #first {
+    height: 90vh;
+  }
+  main #secend {
+    height: 140vh;
+  }
+  main #third {
+    height: 200vh;
+  }
+  main #third-main-content h1 {
+    font-size: 30px;
+    margin: 60px 30px;
+  }
+  main #third-main-content .theme > span {
+    left: -35px;
+  }
+  main #fourth-left > h1 {
+    font-size: 40px;
+  }
+  main #fifth > h1 {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
