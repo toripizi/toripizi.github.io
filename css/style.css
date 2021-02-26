@@ -3,7 +3,7 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Shippori Mincho B1', serif;
 }
 
 *, *::before, *::after {
@@ -84,7 +84,7 @@ body {
 
 header {
   width: 100%;
-  height: 15vh;
+  height: 13vh;
 }
 
 .half {
@@ -95,7 +95,6 @@ header {
 #logo {
   margin-right: 50%;
   margin-bottom: 10px;
-  font-family: 'Shippori Mincho B1', serif;
   font-size: 40px;
 }
 
@@ -110,7 +109,7 @@ header {
 }
 
 #nav {
-  width: 80%;
+  width: 70%;
   height: 34%;
   letter-spacing: 1px;
 }
@@ -167,7 +166,7 @@ main {
 
 main #first {
   width: 100%;
-  height: 85vh;
+  height: 87vh;
   background: -webkit-gradient(linear, left top, right top, from(white), color-stop(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0))), url(../images/paper-5985445.jpg) top right;
   background: linear-gradient(to right, white, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0)), url(../images/paper-5985445.jpg) top right;
   background-size: cover;
@@ -180,7 +179,6 @@ main #first-main {
 }
 
 main #first-main > div > h1 {
-  font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
   font-size: 65px;
   line-height: 0.5;
@@ -242,8 +240,9 @@ main #secend-left {
 }
 
 main #secend-hash {
+  font-size: 7vw;
   color: #FA4F4F;
-  margin-left: 45%;
+  margin-left: 45vw;
   margin-bottom: 28%;
 }
 
@@ -255,14 +254,12 @@ main #secend-right {
 }
 
 main #secend-right > h1 {
-  font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
-  font-size: 55px;
+  font-size: 50px;
   color: white;
 }
 
 main #secend-right > h1 > span {
-  font-family: 'Josefin Sans', sans-serif;
   color: #FA4F4F;
 }
 
@@ -315,12 +312,11 @@ main #third {
 }
 
 main #third > h1 {
-  font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
   font-size: 60px;
   position: absolute;
   z-index: 6;
-  width: 40%;
+  width: 30%;
   margin-top: 13%;
   margin-left: 4%;
 }
@@ -367,6 +363,7 @@ main #third-main-content .theme > p {
 }
 
 main #third-main-content .theme > span {
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
   font-size: 70px;
   color: #faa0aa;
@@ -391,7 +388,6 @@ main #fourth-left {
 }
 
 main #fourth-left > h1 {
-  font-family: 'Josefin Sans', sans-serif;
   color: white;
   font-size: 55px;
   margin-left: 8%;
@@ -400,7 +396,6 @@ main #fourth-left > h1 {
 }
 
 main #fourth-left > h1 span {
-  font-family: 'Josefin Sans', sans-serif;
   color: #FA4F4F;
 }
 
@@ -410,8 +405,9 @@ main #fourth-none {
 }
 
 main #fourth-hash {
+  font-size: 7vw;
   color: #FA4F4F;
-  margin-left: 45%;
+  margin-left: 45vw;
   margin-bottom: 11%;
 }
 
@@ -428,7 +424,6 @@ main #fifth {
 }
 
 main #fifth > h1 {
-  font-family: 'Josefin Sans', sans-serif;
   color: black;
   font-size: 55px;
   margin-left: 5%;
@@ -509,9 +504,6 @@ footer {
   #logo {
     margin-right: 30%;
   }
-  main #secend-hash {
-    margin-left: 42%;
-  }
   main #third > h1 {
     font-size: 40px;
     width: 30%;
@@ -531,7 +523,10 @@ footer {
     font-size: 50px;
   }
   main #fourth-hash {
-    margin-left: 42%;
+    display: none;
+  }
+  main #secend-hash {
+    display: none;
   }
 }
 
@@ -580,8 +575,7 @@ footer {
     background: none;
   }
   main #first-main {
-    padding-left: 20px;
-    padding-top: 60px;
+    padding: 50px 40px;
   }
   main #secend {
     height: 100vh;
@@ -595,10 +589,10 @@ footer {
     width: 100%;
     height: 50%;
     padding: 0 30px;
-    padding-top: 1%;
+    padding-top: 3%;
   }
   main #secend-right > h1 {
-    font-size: 35px;
+    font-size: 8vw;
   }
   main #secend-right > p {
     font-size: 16px;
@@ -633,7 +627,6 @@ footer {
     padding: 0px 10px;
   }
   main #third-main-content > h1 {
-    font-family: 'Josefin Sans', sans-serif;
     font-weight: 700;
     font-size: 35px;
     color: white;
@@ -683,7 +676,7 @@ footer {
 
 @media (max-width: 600px) {
   main #first-main > div > h1 {
-    font-size: 12vw;
+    font-size: 10vw;
   }
 }
 
